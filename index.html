@@ -78,7 +78,33 @@
             <div class="lg:w-1/2">
                 <div class="relative">
                     <div class="absolute -top-12 -left-12 w-48 h-48 bg-blue-400/20 blur-3xl rounded-full"></div>
-                    <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=800&q=80" alt="Soka POS Mockup" class="rounded-[2.5rem] shadow-2xl relative z-10 border-4 border-white">
+                   <div class="video-responsive-wrapper" style="
+    position: relative;
+    padding-bottom: 125%; /* Rasio aspek video agar pas di HP */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 40px; /* Sudut melengkung, sesuaikan dengan aslinya */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bayangan tipis agar elegan */
+">
+    <iframe 
+        src="https://www.youtube.com/embed/h3lpwAXz6Io?autoplay=1&mute=1&loop=1&playlist=h3lpwAXz6Io&controls=0&modestbranding=1" 
+        title="Sokapos Aplikasi POS" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 40px; /* Sudut melengkung di iframe-nya juga */
+        "
+    >
+    </iframe>
+</div>
                     <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl z-20 border border-slate-100 hidden md:block">
                         <div class="flex items-center space-x-3">
                             <div class="p-2 bg-green-100 rounded-lg text-green-600">

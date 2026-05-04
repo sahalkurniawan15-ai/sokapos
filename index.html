@@ -29,6 +29,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .pulse-soft {
+            animation: pulse-soft 2s infinite;
+        }
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
     </style>
 </head>
 <body class="bg-[#FDFDFD] text-slate-900">
@@ -45,7 +52,7 @@
             <div class="hidden md:flex items-center space-x-8 font-semibold text-sm">
                 <a href="#sokapos" class="hover:text-blue-700 transition">Soka POS</a>
                 <a href="#digital" class="hover:text-blue-700 transition">Layanan Digital</a>
-                <a href="#kelontong" class="hover:text-blue-700 transition">Toko Kelontong</a>
+                <a href="https://donaunoapp.vercel.app" target="_blank" class="text-blue-700 font-bold border-b-2 border-blue-700 pb-1">Buka App</a>
                 <a href="https://wa.me/6282220220414" class="bg-blue-700 text-white px-6 py-2.5 rounded-full hover:bg-blue-800 transition shadow-md">Hubungi Kami</a>
             </div>
         </div>
@@ -57,7 +64,7 @@
             <div class="lg:w-1/2">
                 <div class="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold mb-6 border border-blue-100">
                     <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
-                    Digitalisasi UMKM Banyumas
+                    Digitalisasi UMKM
                 </div>
                 <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
                     Satu Platform untuk <span class="text-gradient">Semua Kebutuhan</span> Bisnis Anda.
@@ -65,46 +72,47 @@
                 <p class="text-lg text-slate-600 mb-10 leading-relaxed">
                     Soka Celluler hadir lebih dari sekadar toko. Kami adalah pusat transaksi digital, penyedia kebutuhan pokok, dan pengembang <strong>Soka POS</strong>—aplikasi kasir pintar untuk memajukan usaha Anda.
                 </p>
+                <!-- Tombol Action Utama -->
                 <div class="flex flex-wrap gap-4">
-                    <a href="#sokapos" class="bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-800 transition flex items-center shadow-xl shadow-blue-100">
-                        Lihat Soka POS
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <a href="https://donaunoapp.vercel.app" target="_blank" class="bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold hover:bg-blue-800 transition flex items-center shadow-xl shadow-blue-100 pulse-soft">
+                        Coba Aplikasi Gratis
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                     </a>
-                    <a href="#digital" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">
-                        Layanan Transaksi
+                    <a href="#sokapos" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">
+                        Pelajari Fitur
                     </a>
                 </div>
             </div>
             <div class="lg:w-1/2">
                 <div class="relative">
                     <div class="absolute -top-12 -left-12 w-48 h-48 bg-blue-400/20 blur-3xl rounded-full"></div>
-<div class="video-responsive-wrapper" style="
-    position: relative;
-    padding-bottom: 100%; /* Rasio aspek video agar pas di HP */
-    height: 0;
-    overflow: hidden;
-    margin-top: 20px;
-    border-radius: 40px; /* Sudut melengkung, sesuaikan dengan aslinya */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bayangan tipis agar elegan */
-">
-    <iframe 
-        src="https://www.youtube.com/embed/h3lpwAXz6Io?autoplay=1&mute=1&loop=1&playlist=h3lpwAXz6Io&controls=0&modestbranding=1" 
-        title="Sokapos Aplikasi POS" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen
-        style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 40px; /* Sudut melengkung di iframe-nya juga */
-        "
-    >
-    </iframe>
-</div>
+                    <div class="video-responsive-wrapper" style="
+                        position: relative;
+                        padding-bottom: 100%;
+                        height: 0;
+                        overflow: hidden;
+                        margin-top: 20px;
+                        border-radius: 40px;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                    ">
+                        <iframe 
+                            src="https://www.youtube.com/embed/h3lpwAXz6Io?autoplay=1&mute=1&loop=1&playlist=h3lpwAXz6Io&controls=0&modestbranding=1" 
+                            title="Sokapos Aplikasi POS" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 40px;
+                            "
+                        >
+                        </iframe>
+                    </div>
                     <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl z-20 border border-slate-100 hidden md:block">
                         <div class="flex items-center space-x-3">
                             <div class="p-2 bg-green-100 rounded-lg text-green-600">
@@ -123,11 +131,15 @@
 
     <!-- Highlight: Soka POS -->
     <section id="sokapos" class="py-24 bg-slate-50 px-6">
-        <div class="container mx-auto">
-            <div class="text-center mb-16">
+        <div class="container mx-auto text-center">
+            <div class="mb-16">
                 <h2 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-4">Produk Unggulan</h2>
                 <h3 class="text-4xl font-extrabold mb-4">Soka POS: Revolusi Kasir UMKM</h3>
-                <p class="text-slate-600 max-w-2xl mx-auto">Aplikasi kasir yang dirancang khusus untuk mempermudah pemilik toko kelontong, kios pulsa, dan UMKM lainnya dalam mengelola stok dan keuangan.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto mb-8">Aplikasi kasir yang dirancang khusus untuk mempermudah pemilik toko kelontong, kios pulsa, dan UMKM lainnya dalam mengelola stok dan keuangan.</p>
+                <a href="https://donaunoapp.vercel.app" target="_blank" class="inline-flex items-center text-blue-700 font-extrabold hover:underline group">
+                    Buka Aplikasi Sekarang
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -171,7 +183,7 @@
     <section id="digital" class="py-24 px-6 bg-white">
         <div class="container mx-auto flex flex-col lg:flex-row-reverse items-center gap-16">
             <div class="lg:w-1/2">
-                <h2 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-4 font-bold">Layanan Utama</h2>
+                <h2 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-4">Layanan Utama</h2>
                 <h3 class="text-4xl font-extrabold mb-6">Pusat Transaksi Digital</h3>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
                     Jangan biarkan pelanggan menunggu. Soka Celluler menyediakan sistem pengisian pulsa dan paket data yang super cepat dengan harga grosir.
@@ -205,7 +217,7 @@
     <section id="kelontong" class="py-24 px-6 bg-slate-50">
         <div class="container mx-auto flex flex-col lg:flex-row items-center gap-16">
             <div class="lg:w-1/2">
-                <h2 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-4 font-bold">Layanan Utama</h2>
+                <h2 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-4">Layanan Utama</h2>
                 <h3 class="text-4xl font-extrabold mb-6">Toko Kelontong Lengkap</h3>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
                     Kebutuhan dapur dan rumah tangga tersedia lengkap di Soka Celluler. Kami memastikan setiap produk sembako memiliki kualitas terbaik untuk keluarga Anda.
@@ -250,19 +262,20 @@
                     </div>
                     <div class="lg:w-1/2">
                         <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-                            <h4 class="text-2xl font-bold mb-6">Lokasi Toko</h4>
-                            <div class="space-y-6">
-                                <div class="flex items-start space-x-4">
-                                    <svg class="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
-                                    <p class="text-blue-50">Sokawera RT 03 / RW 01, Kec. Cilongok, Kab. Banyumas</p>
-                                </div>
-                                <div class="flex items-center space-x-4">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                    <p class="text-blue-50">0822-2022-0414</p>
-                                </div>
-                                <a href="https://wa.me/6282220220414" class="block bg-white text-blue-700 text-center py-4 rounded-2xl font-bold shadow-lg shadow-blue-900/20 hover:bg-blue-50 transition">
-                                    Chat Admin Sekarang
+                            <h4 class="text-2xl font-bold mb-6 text-center">Akses Cepat</h4>
+                            <div class="space-y-4">
+                                <a href="https://donaunoapp.vercel.app" target="_blank" class="block bg-white text-blue-700 text-center py-4 rounded-2xl font-bold shadow-lg hover:bg-blue-50 transition">
+                                    Coba Aplikasi Gratis
                                 </a>
+                                <a href="https://wa.me/6282220220414" class="block border-2 border-white/50 text-white text-center py-4 rounded-2xl font-bold hover:bg-white/10 transition">
+                                    Hubungi Admin (WA)
+                                </a>
+                            </div>
+                            <div class="mt-8 pt-8 border-t border-white/20">
+                                <div class="flex items-start space-x-4">
+                                    <svg class="w-6 h-6 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                                    <p class="text-blue-50 text-sm">Sokawera RT 03 / RW 01, Kec. Cilongok, Kab. Banyumas</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -284,7 +297,7 @@
                 </div>
                 <div class="flex space-x-8 text-sm font-bold text-slate-400">
                     <a href="#sokapos" class="hover:text-blue-700 transition">Soka POS</a>
-                    <a href="#digital" class="hover:text-blue-700 transition">Digital</a>
+                    <a href="https://donaunoapp.vercel.app" class="hover:text-blue-700 transition">App</a>
                     <a href="#kelontong" class="hover:text-blue-700 transition">Sembako</a>
                 </div>
                 <div class="text-slate-400 text-xs">
